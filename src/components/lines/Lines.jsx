@@ -4,6 +4,7 @@ function Lines() {
   return (
     <>
       <div id="gradient"></div>
+      <div id="gradient-box"></div>
       <section id="lines">
         <marquee direction="right">
           Level up your life, level up the world. Level up your life, level up
