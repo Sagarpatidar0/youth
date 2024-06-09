@@ -82,12 +82,12 @@
     background-size: contain, auto;
     background-repeat: repeat, no-repeat;
     background-attachment: scroll, fixed;
-    height: 600vh;
   }
   
   #main-content{
     display: flex;
     flex-wrap: wrap;
+    padding-top: 350px;
     color: #fff;
   }
   
@@ -110,6 +110,7 @@
     width: 60%;
     padding: 0 5%;
     box-sizing: border-box;
+    margin: 0 0 200px 0;
   }
   
   .center{
@@ -149,6 +150,17 @@
     }
     #loop > h1 {
       font-size: 1.5rem;
+    }
+    .content-item{
+      width: 90%;
+    }
+
+    .para{
+      font-size: small;
+    }
+
+    .center-item .para{
+      margin-bottom: 20px;
     }
   }
   
