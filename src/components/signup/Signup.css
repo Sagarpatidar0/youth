@@ -1,0 +1,154 @@
+#form-img {
+  margin-top: 100px;
+  width: 100%;
+  height: 90vh;
+  background-image: url("./images/full-bg.PNG");
+  background-position: center;
+  background-size: cover;
+}
+
+.form-container {
+  padding-top: 20vh;
+  display: flex;
+  margin: 0 9vw;
+  justify-content: space-evenly;
+}
+
+#signup-form {
+  display: flex;
+  width: 80vw;
+  flex-wrap: wrap;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 47.5%;
+  margin: 0 2.5% 20px 0;
+}
+
+.form-group input {
+  color: #ffffff;
+  font-size: 24px;
+  border: none;
+  border-bottom: 2.5px solid white;
+  margin-bottom: 10px;
+  background: #00000000;
+}
+
+.form-group input:focus {
+  outline: none;
+}
+
+.form-group input[type="checkbox"] {
+  border: 1.5px solid #fff;
+  font-size: medium;
+}
+.form-check-input:checked {
+  background-color: #000000;
+  border-color: #ffffff;
+}
+
+label {
+  font-size: 32px;
+  display: inline-block;
+  color: white;
+  font-family: "origin-tech";
+}
+
+label.form-check-label {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+#form-btn {
+  border: none;
+  line-height: 51px;
+  font-size: 30px;
+  padding: 0;
+  background-color: #f2662c;
+  border-radius: 10px;
+  font-family: "origin-tech";
+  margin-top: 9px;
+  cursor: pointer;
+}
+
+.form-main-text h2 {
+  font-size: 46px;
+  color: white;
+  margin-bottom: 0;
+  font-family: "origin-tech";
+}
+
+.form-main-text p {
+  font-size: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button.btn.btn-primary {
+  border: none;
+  line-height: 51px;
+  font-size: 40px;
+  padding: 2px 52px;
+  background-color: #f2662c;
+  border-radius: 10px;
+  font-family: "origin-tech";
+  margin-top: 9px;
+}
+
+button.btn.btn-primary:focus {
+  border: 0px solid #f2662c;
+  box-shadow: 0 0 0 0.25rem #f2662c;
+}
+
+@media screen and (max-width: 1350px) {
+  .form-container {
+    margin: 0 4vh;
+  }
+  label {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #form-img {
+    height: 100vh;
+  }
+  .form-container {
+    flex-direction: column;
+    padding-top: 10vh;
+  }
+  .form-main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .form-main-text h2 {
+    width: 40%;
+    text-align: center;
+  }
+
+  #signup-form {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+  }
+  .form-group {
+    width: 100%;
+  }
+  #signup-form {
+    width: 100%;
+  }
+  .form-main-text h2 {
+    width: 100%;
+    text-align: center;
+  }
+}

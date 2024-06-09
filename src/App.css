@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #0D0D0D;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* -------------- All Fonts ----------------- */
+
+@font-face {
+  font-family: OkineSans;
+  src: url(./font/made-okine-sans-personal-use.black-outline.otf);
+}
+@font-face {
+  font-family: GillSansDisplay;
+  src: url(./font/GillSansDisplayMTPro-ExBd.otf);
+}
+
+@font-face {
+  font-family: game-of-squids;
+  src: url(./font/Game\ Of\ Squids\ 400.otf);
+}
+@font-face {
+  font-family: origin-tech;
+  src: url(./font/Origin\ Tech\ Demo\ 400.otf);
+}
+@font-face {
+  font-family: blanka;
+  src: url(./font/Blanka-Regular\ 400.otf);
+}

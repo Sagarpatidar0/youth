@@ -1,0 +1,112 @@
+#footer {
+  margin-top: 50px;
+  padding: 50px 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.frow-one h1 {
+  font-family: blanka;
+  font-size: 37.5px;
+  color: #e24e20;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.frow-one h1 span {
+  color: #fff;
+}
+
+.frow-one h2 {
+  font-size: 30px;
+  font-family: game-of-squids;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.frow-two {
+  display: flex;
+  gap: 50px;
+}
+
+.rt-col > h3 {
+  color: #e24e20;
+  font-family: "Sanchez", serif;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.rt-col p {
+  font-size: 22px;
+  font-family: "Sanchez", serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.frow-three {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#foot-btn {
+  color: white;
+  font-size: 20px;
+  font-family: "Sanchez", serif;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 2px solid #e24e20;
+  border-radius: 50px;
+  cursor: pointer;
+  height: fit-content;
+}
+
+#foot-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer-socialicon img {
+  cursor: pointer;
+  width: 100px;
+}
+
+#footer-socialicon img:hover {
+  transform: scale(1.1);
+}
+
+#footer-socialicon img:nth-child(1) {
+  width: 110px;
+}
+
+@media screen and (max-width: 938px) {
+  #footer {
+    padding: 50px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rt-col > h3 {
+    font-size: 20px;
+  }
+
+  .rt-col p {
+    font-size: 18px;
+  }
+
+  .frow-three {
+    flex-direction: column;
+  }
+  #foot-btn {
+    width: fit-content;
+  }
+  #foot-btn a {
+    font-size: 16px;
+  }
+  #footer-socialicon img {
+    width: 80px;
+  }
+  #footer-socialicon img:nth-child(1) {
+    width: 90px;
+  }
+}

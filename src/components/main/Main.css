@@ -1,0 +1,154 @@
+.youthspire-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+  
+  .youthspire-heading img {
+    width: 80%;
+    animation: opac 1100ms infinite;
+  }
+  
+  @keyframes opac {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.3;
+    }
+    20% {
+      opacity: 0.7;
+    }
+    30% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    60% {
+      opacity: 0.7;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .sub-heading {
+    color: #fff;
+    font-size: 2rem;
+    margin-top: -20px;
+  }
+  #loop {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    white-space: nowrap;
+    font-family: gilroy;
+    z-index: -100;
+    margin-top: -100px;
+  }
+  
+  #loop > h1 {
+    font-weight: 400;
+    font-size: 2rem;
+    animation-name: anim;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    color: #fff;
+  }
+  #loop > h1 > span {
+    -webkit-text-stroke: 1.2px #f1f6f6;
+    color: transparent;
+    font-weight: 500;
+  }
+  
+  @keyframes anim {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  #main {
+    overflow-x: hidden;
+    background: url("./images/allbg.png"), url("./images/bgimg.webp");
+    background-position: center, center top;
+    background-size: contain, auto;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+    height: 600vh;
+  }
+  
+  #main-content{
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+  }
+  
+  .item-contaner{
+    width: 100%;
+    display: flex;
+  }
+  
+  .item-contaner.right-item{
+    justify-content: flex-end;
+  }
+  
+  .item-contaner.center-item{
+    justify-content: center;
+  }
+  
+  .content-item{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 0 5%;
+    box-sizing: border-box;
+  }
+  
+  .center{
+    text-align: center;
+    width: 80%;
+  }
+  
+  
+  .heading {
+    color: #86ffff;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: gill-sans;
+  }
+  
+  .sub {
+    color: white;
+    font-size: 22px;
+  }
+  
+  .para {
+    color: white;
+    font-family: sanchez;
+    font-size: 15px;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .youthspire-heading {
+      height: 30vh;
+    }
+    .sub-heading {
+      font-size: 1.5rem;
+    }
+    #loop {
+      margin-top: -50px;
+    }
+    #loop > h1 {
+      font-size: 1.5rem;
+    }
+  }
+  

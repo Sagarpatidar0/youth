@@ -1,0 +1,111 @@
+#journey {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .Roadmap {
+    display: flex;
+    flex-direction: column;
+    width: 21rem;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .Roadmap h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: game-of-squids;
+    margin: 0;
+  }
+  
+  .Roadmap p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin: 0;
+  }
+  
+  .top-heading {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #roadmap-subhead {
+    width: 116%;
+    font-family: sanchez;
+  }
+  
+  .multiple-element {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 350px;
+    align-items: center;
+  }
+  
+  .roadmap-items {
+    width: 49%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .title {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 5rem;
+  }
+  
+  .title h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: game-of-squids;
+    margin: 0;
+  }
+  
+  .title p {
+    font-size: 1rem;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin: 5px 0;
+  }
+  @media screen and (max-width: 950px) {
+    .title h1 {
+      font-size: 1.5rem;
+    }
+  
+    .title p {
+      font-size: 0.9rem;
+    }
+    .roadmap-items img {
+      scale: 0.8;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .multiple-element {
+      margin-top: 30px;
+      flex-direction: column;
+      gap: 30px;
+      height: 100%;
+    }
+  
+    .roadmap-items {
+      width: 100%;
+    }
+    .Roadmap h1 {
+      font-size: 3rem;
+    }
+    .Roadmap p {
+      font-size: 1rem;
+    }
+  }
