@@ -4,6 +4,7 @@ import Lines from './components/lines/Lines'
 import Main from './components/main/Main'
 import Roadmap from './components/roadmap/Roadmap'
 import Signup from './components/signup/Signup'
+import Table from './components/table/Table'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <Main />
     <Lines />
     <Roadmap />
+    <Table />
     <Signup />
     <Footer />
     </>
