@@ -1,0 +1,239 @@
+.profile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.nav-item {
+  /* width: 33%; */
+  display: flex;
+  justify-content: center;
+}
+
+.y-logo {
+  background: #000000;
+}
+.nav-item img {
+  width: 25%;
+}
+
+.profile-logo img {
+  width: 20%;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.peofile-content {
+  padding: 2rem 0 0 4rem;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+/* PROFILE MENU */
+
+.profile-menu {
+  position: absolute;
+  height: 100vh;
+  background: RGB(191, 191, 191);
+  width: 380px;
+  right: 0%;
+  top: 0;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.top-logo {
+  width: 15%;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.top-content {
+  font-size: 18px;
+}
+
+.username {
+  font-weight: 600;
+}
+.pf-center {
+  height: 50%;
+}
+
+.clist-item {
+  list-style: none;
+  font-size: 20px;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+
+.comingsoon {
+  cursor: not-allowed;
+}
+
+.comingsoon span {
+  font-size: 14px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
+.social-icon svg {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10%;
+}
+
+.newsletter-head {
+  font-size: 22px;
+}
+
+.theme-btn {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+/* Edit Profile */
+.edit-profile {
+  margin: 4% 5.5%;
+}
+
+.edit-head {
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.edit-profile form {
+  margin-top: 3%;
+}
+
+.input-section {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-section label {
+  font-size: 20px;
+}
+
+.input-section input {
+  font-size: 22px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.edit-profile form button {
+  padding: 5px;
+  font-size: 20px;
+  background: #000;
+  color: #ffffff;
+  cursor: pointer;
+  width: 20%;
+  margin-left: 5%;
+}
+
+/* ------------------- Animation --------------- */
+.menu-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.menu-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.menu-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.menu-close img {
+  scale: 3;
+  cursor: pointer;
+}
+
+.menu-close {
+  z-index: 10;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a.active{
+  color: #383838;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-menu {
+    height: 94vh;
+    overflow: hidden;
+  }
+  .profile-nav {
+    padding: 20px 0;
+    overflow: hidden;
+  }
+
+  .y-logo img,
+  .youth-logo,
+  .profile-logo {
+    scale: 2.5;
+  }
+
+  .menu-close {
+    z-index: 10;
+  }
+
+  .menu-close img {
+    scale: 7;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+
+  .peofile-content {
+    padding: 2rem 0 0 1rem;
+    font-size: 20px;
+  }
+}

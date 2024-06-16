@@ -1,0 +1,35 @@
+.svg-icons {
+    height: 0px;
+  }
+  
+  .svg-icons img {
+    height: 4.4rem;
+    width: 4.4rem;
+    color: rgb(3, 3, 3);
+    position: fixed;
+    bottom: 2vh;
+    left: 70px;  
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .svg-icons img:nth-child(2) {
+    left: 145px;
+  }
+  
+  .svg-icons img:hover {
+    scale: 1.1;
+  }
+
+  @media screen and (max-width: 768px) {
+    .svg-icons img {
+      height: 3.4rem;
+      width: 3.4rem;
+      bottom: 1vh;
+      left: 10px;
+    }
+  
+    .svg-icons img:nth-child(2) {
+      left: 64px;
+    }
+  }

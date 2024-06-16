@@ -1,0 +1,101 @@
+.inv-container{
+    color: white;
+    margin: 5%;
+}
+.inv-title{
+    text-transform: uppercase;
+}
+
+.login-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inv-logo{
+    display: flex;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+#inv-login-btn{
+    color: white;
+}
+
+.wallet-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: fit-content;
+    margin: 10px auto;
+    gap: 5px;
+}
+.info-icon{
+    display: inline-block;
+    background: #464646;
+    width: 17px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.connect-wallet-button{
+    padding: 30px 7vw;
+    font-size: 50px;
+    cursor: pointer;
+    background: #000;
+    color: white;
+    border: 2px solid white;
+    margin: auto;
+}
+
+/* ----------------- Popup ---------------- */
+.wallet-popup{
+    /* display: none; */
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    /* width: 32%; */
+    height: 65%;
+    background: rgb(90, 90, 90);
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 30px;
+    max-width: 450px;
+    border-radius: 7px;
+}
+
+.wallet-popup-close{
+    display: none;
+}
+
+.wallet-popup h1{
+    padding-bottom: 15px;
+}
+
+.wallet-popup p{
+    padding: 5px 5px;
+    margin-bottom: 10px;
+}
+
+
+.wallet-popup a{
+    width: 100%;
+    border: 1px solid white;
+    font-size: large;
+    margin-top: 15px;
+    padding: 10px 95px;
+    border-radius: 30px;
+}
+.popup-close{
+    text-align: right;
+}
+.popup-close img{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}

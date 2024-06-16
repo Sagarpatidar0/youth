@@ -1,7 +1,42 @@
-import "./Main.css"
+import "./Main.css";
+import Text from "../textAnimation/Text";
+import { useEffect, useRef, useState } from "react";
 function Main() {
+
+  const containerRef = useRef(null);
+  const buttonRef = useRef(null);
+  const [isAtBottom, setIsAtBottom] = useState(false);
+  const [mainHeight, setMainHeight] = useState(0);
+
+  useEffect(() => {
+
+    const mainElement = containerRef.current;
+    if (mainElement) {
+      setMainHeight(mainElement.scrollHeight);
+    }
+
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const buttonHeight = buttonRef.current.offsetHeight;
+      if (scrollPosition >= mainHeight + buttonHeight-5) {
+        setIsAtBottom(true);
+      } else {
+        setIsAtBottom(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [mainHeight]);
+
   return (
-    <div id="main">
+    <div id="main" ref={containerRef} className="container">
+      <div className={`fixed-btn ${isAtBottom ? "scroll-up" : ""}`} ref={buttonRef} id="myButton">
+        <a href="#">MINT NOW</a>
+      </div>
       <div className="youthspire-heading">
         <img src="./images/youth_heading.png" alt="" />
         <div className="sub-heading">{`{galactic warrior card}`}</div>
@@ -9,18 +44,24 @@ function Main() {
       <div id="loop">
         <h1>
           <b>Fuel the passion,</b> forge the future Fuel the passion,
-          <span>forge the future Fuel the passion,</span
-          ><span><i> forge the future .</i></span>
+          <span>forge the future Fuel the passion,</span>
+          <span>
+            <i> forge the future .</i>
+          </span>
         </h1>
         <h1>
           <b>Fuel the passion,</b> forge the future Fuel the passion,
-          <span>forge the future Fuel the passion,</span
-          ><span><i> forge the future .</i></span>
+          <span>forge the future Fuel the passion,</span>
+          <span>
+            <i> forge the future .</i>
+          </span>
         </h1>
         <h1>
           <b>Fuel the passion,</b> forge the future Fuel the passion,
-          <span>forge the future Fuel the passion,</span
-          ><span><i> forge the future .</i></span>
+          <span>forge the future Fuel the passion,</span>
+          <span>
+            <i> forge the future .</i>
+          </span>
         </h1>
       </div>
       <div id="main-content">
@@ -65,26 +106,16 @@ function Main() {
               “REVOLUTIONARY MINT Where Contribution Wins MORE”
             </div>
             <div className="para">
-              Join Deuns & Biboi&rsquos galactic youth on a mission to ignite your
-              potential! Contribute to impactful technology & development with
-              every NFT card purchase in our system. It&rsquos not just about the
-              amount you invest, but about joining a collaborative effort with
-              Deuns & Biboi&rsquos young visionaries from another planet. Aim high
-              and become a Top 5 contributor! You&rsquoll receive a coveted Blue Chip
-              NFT Airdrop hand-picked by Deuns & Biboi and their intergalactic
-              community, sparking collaboration across galaxies. Fall within the
-              Top 100 contributors and unlock valuable token rewards within the
-              DApp. Your name will shine on the dedicated Top 100 board,
-              bridging the gap between worlds.
+              <Text text="Join Deuns & Biboi’s galactic youth on a mission to ignite your potential! Contribute to impactful technology & development with every NFT card purchase in our system. It’s not just about the amount you invest, but about joining a collaborative effort with Deuns & Biboi’s young visionaries from another planet. Aim high and become a Top 5 contributor! You’ll receive a coveted Blue Chip NFT Airdrop hand-picked by Deuns & Biboi and their intergalactic community, sparking collaboration across galaxies. Fall within the Top 100 contributors and unlock valuable token rewards within the DApp. Your name will shine on the dedicated Top 100 board, bridging the gap between worlds." />
             </div>
             <div className="para">
-              This isn&rsquot just a one-time mint; it&rsquos an investment in the future.
-              We track contributions in real-time for complete transparency, and
-              Deuns & Biboi, alongside their galactic youth, are committed to
-              long-term engagement. Future incentives are planned to ensure your
-              contribution continues to matter. Join YouthSpire U.A.C., unleash
-              your potential, and help build a brighter future for all, across
-              planets and cultures!
+              This isn&rsquot just a one-time mint; it&rsquos an investment in
+              the future. We track contributions in real-time for complete
+              transparency, and Deuns & Biboi, alongside their galactic youth,
+              are committed to long-term engagement. Future incentives are
+              planned to ensure your contribution continues to matter. Join
+              YouthSpire U.A.C., unleash your potential, and help build a
+              brighter future for all, across planets and cultures!
             </div>
           </div>
         </div>
@@ -126,35 +157,27 @@ function Main() {
               partnership and ongoing engagement initiatives, your YouthSpire
               U.A.C. NFT becomes a key that unlocks a universe of possibilities,
               empowering you to contribute meaningfully and shape a brighter
-              future, alongside Deuns & Biboi&rsquos intergalactic youth community
+              future, alongside Deuns & Biboi&rsquos intergalactic youth
+              community
             </div>
           </div>
         </div>
         <div className="item-contaner center-item">
           <div className="center content-item">
             <div className="para">
-              Earning tokens by crushing quests and unlocking exclusive rewards.
-              Donning your digital AR wearables, becoming a beacon in the
-              metaverse. Owning a piece of the Youthspire ecosystem, your stake
-              growing with every step.
+              <Text text="Earning tokens by crushing quests and unlocking exclusive rewards. Donning your digital AR wearables, becoming a beacon in the metaverse. Owning a piece of the Youthspire ecosystem, your stake growing with every step." />
             </div>
             <div className="para">
-              This is your chance to: Join a thriving Discord community, your
-              voice shaping the future. Become a top contributor, earning a
-              coveted Blue Chip NFT airdrop. Leave your mark on the world,
-              building a legacy for generations to come.
+              <Text text="This is your chance to: Join a thriving Discord community, your voice shaping the future. Become a top contributor, earning a coveted Blue Chip NFT airdrop. Leave your mark on the world, building a legacy for generations to come." />
             </div>
             <div className="para">
-              The future is in your hands. Grab your NFT, step onto the
-              platform, and let&rsquos rewrite the narrative. Together, we&rsquoll unlock
-              potential, ignite change, and make Youthspire not just a roadmap,
-              but a revolution.
+              <Text text="The future is in your hands. Grab your NFT, step onto the platform, and let&rsquos rewrite the narrative. Together,  well unlock potential, ignite change, and make Youthspire not just a roadmap, but a revolution." />
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Main
+export default Main;

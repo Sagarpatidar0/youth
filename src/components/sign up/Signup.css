@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+.lo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.lo-header {
+  text-align: center;
+  color: white;
+}
+
+.lo-header img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.input-group input {
+  background-color: transparent;
+  border-style: none;
+  border-bottom: 2px solid white;
+  width: 25rem;
+  display: flex;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-2 {
+  display: flex;
+}
+
+.last-2 {
+  display: flex;
+}
+
+.box label {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.checkbox label {
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+}
+
+.checkbox button {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  width: 12rem;
+  height: 2.7rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.checkbox button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  /* font-weight: 700; */
+}
+
+.check {
+  display: flex;
+  flex-direction: row;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.3rem;
+}
+
+.links a {
+  column-gap: 2rem;
+  color: white;
+  font-size: 1.15rem;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+  /* text-shadow: 2px 2px orangered; */
+}
+
+.input-group input:focus {
+  outline: none;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-self: space-evenly;
+}
+
+.footer img {
+  margin-top: 2rem;
+  width: 2.5rem;
+  height: 3rem;
+}
+
+@media screen and (max-width: 750px) {
+  .su-container {
+    box-sizing: border-box;
+  }
+
+  .first-2 {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .last-2 {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

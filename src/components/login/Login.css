@@ -1,0 +1,157 @@
+
+.lo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.lo-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.lo-header img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: row;
+  row-gap: 2rem;
+  column-gap: 1.2rem;
+}
+
+.lo-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#login-form input {
+  width: 18rem;
+  height: 3rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  background: #fff;
+  color: #000;
+  padding: 0 5px;
+}
+
+#login-btn  {
+  width: 18rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  height: 2.6rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  background-color: gray;
+}
+
+#login-btn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  margin-top: 0.4rem;
+  text-align: center;
+  justify-items: center;
+}
+
+.button-group a {
+  margin: auto;
+  width: 18rem;
+  height: 3rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: gray;
+}
+
+.button-group .Google {
+  background: #FF623A;
+  color: white;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-group .x {
+  background: black;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-group .Facebook {
+  background-color: #252D61;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.3rem;
+}
+
+.links a {
+  column-gap: 2rem;
+  color: white;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-self: space-evenly;
+}
+
+.footer img {
+  margin-top: 2rem;
+  width: 2.5rem;
+  height: 3rem;
+}
+
+
+@media screen and (max-width: 750px) {
+    .login-box  {
+        flex-direction: column;
+    }
+    .button-group{
+        width: 40vw;
+    }
+    .button-group a {
+        width: 18rem;
+        margin-bottom: 5px;
+    }
+    .lo-header img {
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: -12px;
+    }
+}

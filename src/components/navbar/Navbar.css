@@ -1,0 +1,269 @@
+.navbar {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 97%;
+  background: url("images/image-bg.png") no-repeat bottom center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 18px 20px;
+  height: 140px;
+  animation: slideDown 1s ease-out;
+}
+
+.phone-navbar {
+  display: none;
+}
+
+.logo {
+  margin: -20px 0 0 -10px;
+}
+
+.logo img {
+  height: 70px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: end;
+  margin: -19px 0 0;
+  padding: 0;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1s;
+}
+
+.nav-links li {
+  margin: 0 10px;
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: origin-tech;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  padding: 12px 16px;
+}
+
+.dropdown-content li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.login-btn {
+  margin-top: -20px;
+}
+
+.login-btn a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 40px;
+  border: 3px solid #59ff00;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* ----------------------- Responsive design ----------------------- */
+@media screen and (max-width: 750px) {
+
+  .navbar {
+    display: none;
+  }
+
+  .phone-navbar {
+    display: block;
+    width: 100vw;
+    background: #fff;
+  }
+  nav.ph-navbar {
+    margin-top: -5px;
+  }
+  .ph-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    animation: fadin 1.5s ease forwards;
+  }
+
+  @keyframes fadin {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .navbar-logo img {
+    height: 40px;
+  }
+
+  .navbar-burger,
+  .navbar-close {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-right: 10px;
+    border: 10px solid transparent;
+  }
+
+  .navbar-burger span,
+  .navbar-close span {
+    background: white;
+    border-radius: 2px;
+    display: block;
+    height: 2px;
+    margin: 4px 0;
+    width: 25px;
+    transform-origin: center;
+  }
+
+  .navbar-close span {
+    margin: 0px 0;
+    position: absolute;
+  }
+
+  .navbar-close {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+  }
+
+  .navbar-close span:first-child {
+    transform: rotate(45deg);
+  }
+
+  .navbar-close span:last-child {
+    transform: rotate(-45deg);
+  }
+
+  .navbar-menu {
+    background-image: url("./images/NAV\ L.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: none;
+    text-align: left;
+    flex-direction: column;
+    position: fixed;
+    top: 5vh;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    animation: slideDown 0.5s ease forwards;
+    z-index: 999;
+  }
+
+  .menu-active {
+    display: flex;
+  }
+
+  .display-none{
+    display: none;
+  }
+
+  .navbar-menu > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 10px;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-right: 10vw;
+  }
+
+  .navbar-menu ul li {
+    margin: 15px 0;
+  }
+
+  .navbar-menu ul li a,
+  .navbar-menu ul li a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: origin-tech;
+  }
+
+  .nav-link {
+    padding: 0;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+
+  .dropdown-menu li {
+    margin: 0;
+  }
+
+  .dropdown-menu li a {
+    padding: 10px;
+    display: block;
+    color: white;
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(40%);
+    }
+  }
+}

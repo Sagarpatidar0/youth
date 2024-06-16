@@ -1,166 +1,212 @@
 .youthspire-heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.youthspire-heading img {
+  width: 80%;
+  animation: opac 1100ms infinite;
+}
+
+@keyframes opac {
+  0% {
+    opacity: 0;
   }
-  
-  .youthspire-heading img {
-    width: 80%;
-    animation: opac 1100ms infinite;
+  10% {
+    opacity: 0.3;
   }
-  
-  @keyframes opac {
-    0% {
-      opacity: 0;
-    }
-    10% {
-      opacity: 0.3;
-    }
-    20% {
-      opacity: 0.7;
-    }
-    30% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.3;
-    }
-    60% {
-      opacity: 0.7;
-    }
-    70% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
+  20% {
+    opacity: 0.7;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.sub-heading {
+  color: #fff;
+  font-size: 2rem;
+  margin-top: -20px;
+}
+#loop {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  white-space: nowrap;
+  font-family: gilroy;
+  z-index: -100;
+  margin-top: -100px;
+}
+
+#loop > h1 {
+  font-weight: 400;
+  font-size: 2rem;
+  animation-name: anim;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  color: #fff;
+}
+#loop > h1 > span {
+  -webkit-text-stroke: 1.2px #f1f6f6;
+  color: transparent;
+  font-weight: 500;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+#main {
+  overflow-x: hidden;
+  background: url("./images/allbg.png"), url("./images/bgimg.webp"), rgba(0, 0, 0, 0.226);
+  background-position: center, center top;
+  background-size: contain, auto;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll, fixed;
+  position: relative;
+}
+
+.mint-now-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.3s;
+}
+
+.fixed-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.3s;
+  background: rgba(0, 0, 0, 0.512);
+  padding: 7px 59px;
+  border-radius: 50px;
+  border: 4px solid white;
+  z-index: 1;
+}
+
+.fixed-btn:hover {
+  background: rgba(0, 0, 0, 0.912);
+  cursor: pointer;
+}
+
+.fixed-btn a{
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.scroll-up {
+  opacity: 0;
+  position: absolute;
+  bottom: 40px;
+  transform: translateX(-50%);
+  transition: opacity 0.8s;
+}
+
+#main-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 350px;
+  color: #fff;
+  background: #00000038;
+}
+
+.item-contaner {
+  width: 100%;
+  display: flex;
+}
+
+.item-contaner.right-item {
+  justify-content: flex-end;
+}
+
+.item-contaner.center-item {
+  justify-content: center;
+}
+
+.content-item {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 0 5%;
+  box-sizing: border-box;
+  margin: 0 0 200px 0;
+}
+
+.center {
+  text-align: center;
+  width: 80%;
+}
+
+.heading {
+  color: #86ffff;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: gill-sans;
+}
+
+.sub {
+  color: white;
+  font-size: 22px;
+}
+
+.para {
+  color: white;
+  font-family: sanchez;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .youthspire-heading {
+    height: 30vh;
   }
   .sub-heading {
-    color: #fff;
-    font-size: 2rem;
-    margin-top: -20px;
+    font-size: 1.5rem;
   }
   #loop {
-    display: flex;
-    height: 10%;
-    width: 100%;
-    white-space: nowrap;
-    font-family: gilroy;
-    z-index: -100;
-    margin-top: -100px;
+    margin-top: -50px;
   }
-  
   #loop > h1 {
-    font-weight: 400;
-    font-size: 2rem;
-    animation-name: anim;
-    animation-duration: 15s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    color: #fff;
+    font-size: 1.5rem;
   }
-  #loop > h1 > span {
-    -webkit-text-stroke: 1.2px #f1f6f6;
-    color: transparent;
-    font-weight: 500;
+  .content-item {
+    width: 90%;
   }
-  
-  @keyframes anim {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  #main {
-    overflow-x: hidden;
-    background: url("./images/allbg.png"), url("./images/bgimg.webp");
-    background-position: center, center top;
-    background-size: contain, auto;
-    background-repeat: repeat, no-repeat;
-    background-attachment: scroll, fixed;
-  }
-  
-  #main-content{
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 350px;
-    color: #fff;
-  }
-  
-  .item-contaner{
-    width: 100%;
-    display: flex;
-  }
-  
-  .item-contaner.right-item{
-    justify-content: flex-end;
-  }
-  
-  .item-contaner.center-item{
-    justify-content: center;
-  }
-  
-  .content-item{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    padding: 0 5%;
-    box-sizing: border-box;
-    margin: 0 0 200px 0;
-  }
-  
-  .center{
-    text-align: center;
-    width: 80%;
-  }
-  
-  
-  .heading {
-    color: #86ffff;
-    font-size: 28px;
-    font-weight: 600;
-    font-family: gill-sans;
-  }
-  
-  .sub {
-    color: white;
-    font-size: 22px;
-  }
-  
+
   .para {
-    color: white;
-    font-family: sanchez;
-    font-size: 15px;
+    font-size: small;
   }
-  
-  
-  @media screen and (max-width: 768px) {
-    .youthspire-heading {
-      height: 30vh;
-    }
-    .sub-heading {
-      font-size: 1.5rem;
-    }
-    #loop {
-      margin-top: -50px;
-    }
-    #loop > h1 {
-      font-size: 1.5rem;
-    }
-    .content-item{
-      width: 90%;
-    }
 
-    .para{
-      font-size: small;
-    }
-
-    .center-item .para{
-      margin-bottom: 20px;
-    }
+  .center-item .para {
+    margin-bottom: 20px;
   }
-  
+  .fixed-btn{
+    padding: 10px 40px;
+  }
+  .fixed-btn a{
+    font-size: 24px;
+  }
+}

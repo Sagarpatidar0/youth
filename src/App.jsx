@@ -1,23 +1,50 @@
-import './App.css'
-import Footer from './components/footer/Footer'
-import Lines from './components/lines/Lines'
-import Main from './components/main/Main'
-import Roadmap from './components/roadmap/Roadmap'
-import Signup from './components/signup/Signup'
-import Table from './components/table/Table'
+import "./App.css";
+import { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./components/login/Login";
+import Profile from "./components/profile/Profile";
+import Setting from "./pages/setting";
+import Signup from "./components/sign up/Signup";
+import MyInventory from "./components/MyInventory/MyInventory";
+import Home from "./pages/home";
+import Loader from "./components/loader/Loader";
+import NotFound from "./components/404/404";
+
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const simulateLoad = setTimeout(() => {
+      setIsLoading(false);
+    }, 10000); 
+
+    return () => clearTimeout(simulateLoad);
+  }, []);
+
+  const handleLoadComplete = () => {
+    setIsLoading(false);
+  };
 
   return (
     <>
-    <Main />
-    <Lines />
-    <Roadmap />
-    <Table />
-    <Signup />
-    <Footer />
+      {isLoading && <Loader onLoadComplete={handleLoadComplete} />}
+      {!isLoading && (
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/settings" element={<Setting />} />
+            <Route path="/myinventory" element={<MyInventory />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      )
+      }
     </>
-  )
+  );
 }
 
-export default App
+export default App;

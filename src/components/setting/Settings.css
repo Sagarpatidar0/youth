@@ -1,0 +1,135 @@
+/* General Container Styling */
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #000000;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Navigation Bar Styling */
+  .settings-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+    background: #000000;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-button {
+    flex-grow: 1;
+    background: #000000;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background 0.3s, border-bottom 0.3s;
+    font-size: 16px;
+    color: #ffffff;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .nav-button.active {
+    background: #000000;
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .nav-button:hover {
+    background: #3c3c3c;
+  }
+  
+  /* Content Section Styling */
+  .settings-content {
+    width: 100%;
+  }
+  
+  .content-section {
+    display: none;
+  }
+  
+  .content-section.active {
+    display: block;
+  }
+  
+ .setting-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  #email-form{
+    align-items: start;
+    padding-left: 10%;
+  }
+  
+  .setting-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .setting-form input[type="text"], .setting-form input[type="email"], .setting-form input[type="password"], .setting-form select  {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    background: black;
+    color: white;
+    border-radius: 4px;
+  }
+
+  .setting-form select  {
+    width: 57%;
+  }
+
+  
+  .setting-btn{
+    background: #1B1B1B;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  
+  button:disabled {
+    background: #d0d0d0;
+    cursor: not-allowed;
+  }
+  
+  .setting-form input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+.basic-form-group{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .basic-form-group{
+        width: 100%;
+    }
+    #email-form{
+        padding-left: 0;
+    }
+    .setting-form select{
+      width: fit-content;
+      padding-right:50px;
+    }
+  }
+  
