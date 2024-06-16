@@ -53,24 +53,25 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #000000;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content li {
+  list-style: none;
   padding: 12px 16px;
 }
 
 .dropdown-content li a {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content li a:hover {
-  background-color: #f1f1f1;
+  background-color: #1b1b1b;
 }
 
 .dropdown:hover .dropdown-content {
@@ -106,7 +107,71 @@
 }
 
 /* ----------------------- Responsive design ----------------------- */
-@media screen and (max-width: 750px) {
+@media screen and (max-width:1430px){
+  .nav-links {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .nav-links li a{
+    font-size: 1.3rem;
+  }
+
+  .logo{
+    margin: -20px 0 0 -20px;
+  }
+
+  .logo img{
+    height: 60px;
+  }
+
+  .login-btn {
+    margin-top: -10px;
+  }
+
+  .login-btn a {
+    padding: 8px 35px;
+  }
+
+}
+
+@media screen and (max-width: 1330px) {
+  .nav-links {
+    width: 60%;
+  }
+
+  .logo {
+    margin: -10px 0 0 20px;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .login-btn {
+    margin-top: -10px;
+  }
+
+  .login-btn a {
+    padding: 8px 35px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .navbar{
+    height: 120px;
+  }
+
+  .login-btn a{
+    padding: 6px 25px;
+  
+  }
+  
+}
+
+
+@media screen and (max-width: 1100px) {
 
   .navbar {
     display: none;

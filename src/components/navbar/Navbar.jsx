@@ -41,13 +41,19 @@ export default function Navbar() {
             <a href="#">Community</a>
             <ul className="dropdown-content">
               <li>
-                <a href="#">Option 1</a>
+                <a className="dropdown-item" href="#header">
+                  COMMUNITY
+                </a>
               </li>
               <li>
-                <a href="#">Option 2</a>
+                <a className="dropdown-item" href="#">
+                  BRANDS
+                </a>
               </li>
               <li>
-                <a href="#">Option 3</a>
+                <a className="dropdown-item" href="#">
+                  CONTACT US
+                </a>
               </li>
             </ul>
           </li>
@@ -114,7 +120,7 @@ export default function Navbar() {
               </ul>
             </li>
             <li>
-            <Link to="/login">Login</Link>
+              <Link to="/login">Login</Link>
             </li>
           </ul>
         </div>
