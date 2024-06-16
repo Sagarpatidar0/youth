@@ -46,3 +46,36 @@ thead > tr th {
   background-position: center;
   background-size: cover;
 }
+
+
+@media screen and (max-width: 1100px) {
+  #table-wrapper {
+    width: 80vw;
+  }
+  #top-ranking {
+    width: 80vw;
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  #table-wrapper {
+    width: 90vw;
+  }
+  #top-ranking {
+    width: 90vw;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  #table-wrapper {
+    width: 90vw;
+  }
+  #table-wrapper-x{
+    width: 90vw;
+    overflow-x: auto;
+  }
+  #top-ranking {
+    width: 120vw;
+  }
+}

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 function Footer() {
@@ -31,10 +32,18 @@ function Footer() {
             <a href="">Work With us</a>
         </div>
         <div id="footer-socialicon">
+          <Link target="_blank" to="https://chat.whatsapp.com/JwUqDLjo2LcCi2CRBVudvy">
             <img src="./images/22.PNG" alt="" />
+          </Link>
+          <Link target="_blank" to="https://t.me/+REZ-rwXYsCBjYTM1">
             <img src="./images/23.PNG" alt="" />
+          </Link>
+          <Link target="_blank" to="https://instagram.com/youthspire_">
             <img src="./images/24.PNG" alt="" />
+          </Link>
+          <Link target="_blank" to="/">
             <img src="./images/25.PNG" alt="" />
+          </Link>
         </div>
       </div>
     </div>

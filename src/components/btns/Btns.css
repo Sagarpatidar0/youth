@@ -1,35 +1,48 @@
 .svg-icons {
-    height: 0px;
-  }
-  
+  height: 0px;
+}
+
+.svg-icons audio {
+  display: none;
+}
+
+.svg-icons img#toggleButton.playing {
+  border: 2px solid green;
+  border-radius: 5px;
+}
+
+/* .svg-icons img#toggleButton.paused {
+    border: 2px solid red;
+  } */
+
+.svg-icons img {
+  height: 4.4rem;
+  width: 4.4rem;
+  color: rgb(3, 3, 3);
+  position: fixed;
+  bottom: 2vh;
+  left: 70px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.svg-icons a img {
+  left: 145px;
+}
+
+.svg-icons img:hover {
+  scale: 1.1;
+}
+
+@media screen and (max-width: 768px) {
   .svg-icons img {
-    height: 4.4rem;
-    width: 4.4rem;
-    color: rgb(3, 3, 3);
-    position: fixed;
-    bottom: 2vh;
-    left: 70px;  
-    z-index: 1;
-    cursor: pointer;
+    height: 3.4rem;
+    width: 3.4rem;
+    bottom: 1vh;
+    left: 10px;
   }
 
-  .svg-icons img:nth-child(2) {
-    left: 145px;
+  .svg-icons a img {
+    left: 64px;
   }
-  
-  .svg-icons img:hover {
-    scale: 1.1;
-  }
-
-  @media screen and (max-width: 768px) {
-    .svg-icons img {
-      height: 3.4rem;
-      width: 3.4rem;
-      bottom: 1vh;
-      left: 10px;
-    }
-  
-    .svg-icons img:nth-child(2) {
-      left: 64px;
-    }
-  }
+}

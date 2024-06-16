@@ -181,9 +181,10 @@
 
 @media screen and (max-width: 768px) {
   .youthspire-heading {
-    height: 30vh;
+    height: 40vh;
   }
   .sub-heading {
+    margin-top: -10px;
     font-size: 1.5rem;
   }
   #loop {
@@ -208,5 +209,14 @@
   }
   .fixed-btn a{
     font-size: 24px;
+  }
+}
+
+@media  screen and (max-width:480px) {
+  .fixed-btn{
+    padding: 10px 24px;
+  }
+  .fixed-btn a{
+    font-size: 22px;
   }
 }
