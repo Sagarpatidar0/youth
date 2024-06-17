@@ -21,7 +21,7 @@ const Loader = ({ onLoadComplete }) => {
   ) : null;
 };
 
-// Add prop types validation
+
 Loader.propTypes = {
   onLoadComplete: PropTypes.func.isRequired,
 };

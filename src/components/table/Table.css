@@ -70,6 +70,7 @@ thead > tr th {
 @media screen and (max-width: 480px) {
   #table-wrapper {
     width: 90vw;
+    overflow-x: hidden;
   }
   #table-wrapper-x{
     width: 90vw;

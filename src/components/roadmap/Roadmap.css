@@ -4,7 +4,8 @@
     color: white;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    padding-top: 100px;
+    background-color: #0D0D0D;
   }
   .Roadmap {
     display: flex;

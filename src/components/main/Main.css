@@ -77,12 +77,22 @@
 }
 #main {
   overflow-x: hidden;
-  background: url("./images/allbg.png"), url("./images/bgimg.webp"), rgba(0, 0, 0, 0.226);
-  background-position: center, center top;
-  background-size: contain, auto;
-  background-repeat: repeat, no-repeat;
-  background-attachment: scroll, fixed;
   position: relative;
+}
+
+#phone-bg-container{
+  background:url("./images/allbg.png"),  url("./images/bgimg.webp"), rgba(0, 0, 0, 0.226);
+  background-position: center, center top;
+  background-repeat: no-repeat, no-repeat; 
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -10;
+}
+
+.phone-bg-container-none{
+  display: none;
+
 }
 
 .mint-now-btn {
@@ -131,7 +141,7 @@
   flex-wrap: wrap;
   padding-top: 350px;
   color: #fff;
-  background: #00000038;
+  /* background: #00000038; */
 }
 
 .item-contaner {

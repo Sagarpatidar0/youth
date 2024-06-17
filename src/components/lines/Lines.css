@@ -17,10 +17,12 @@
 }
   
   section#lines {
-    padding-top: 45px;
+    padding-top: 85px;
+    margin-top: -40px;
     width: 100%;
     display: inline-block;
     z-index: -11;
+    background: #0D0D0D;
   }
   
   marquee.new {
