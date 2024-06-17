@@ -7,6 +7,18 @@
     background: #000;
 }
 
+@media screen and (max-width: 1400px){
+    .loader img{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .loader img{
+        width: 350px;
+    }
+}
+
 @media screen and (max-width: 768px){
     .loader img{
         width: 200px;
