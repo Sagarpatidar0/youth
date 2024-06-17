@@ -16,8 +16,7 @@
 }
 
 .lo-header img {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
 }
 
 .box {
@@ -128,9 +127,12 @@ footer {
 .footer img {
   margin-top: 2rem;
   width: 2.5rem;
-  height: 3rem;
 }
-
+@media screen and (max-width: 900px) {
+  .input-group input{
+    width: 20rem;
+  }
+}
 @media screen and (max-width: 750px) {
   .su-container {
     box-sizing: border-box;
@@ -144,4 +146,30 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
   }
+
+  .input-group input{
+    width: 25rem;
+  }
+
+  .footer img {
+    margin-top: 2rem;
+    width: 2rem;
+  }
 }
+
+@media screen and (max-width: 501px) {
+  .input-group{
+    width: auto;
+    margin-right: 0;
+  }
+
+  .input-group input{
+    width: 20rem;
+  }
+
+  .lo-header img{
+    width: 3rem;
+  }
+}
+
+
