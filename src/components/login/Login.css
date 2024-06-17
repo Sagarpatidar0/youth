@@ -14,8 +14,7 @@
 }
 
 .lo-header img {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
 }
 
 .login-box {
@@ -123,7 +122,7 @@
   column-gap: 2rem;
   color: white;
   text-decoration: none;
-  margin-top: 1rem;
+  margin-top: .3rem;
 }
 
 footer {
@@ -134,7 +133,6 @@ footer {
 .footer img {
   margin-top: 2rem;
   width: 2.5rem;
-  height: 3rem;
 }
 
 
@@ -151,7 +149,45 @@ footer {
     }
     .lo-header img {
         width: 3rem;
-        height: 3rem;
-        margin-bottom: -12px;
+        margin-bottom: 12px;
     }
+
+    #login-form input {
+      width: 17.3rem;
+      height: 2.8rem;
+    }
+
+    .links{
+      margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    #login-form input {
+      width: 65vw;
+      height: 2.8rem;
+    }
+
+    #login-btn{
+      width: 67vw;
+    }
+
+    .login-box {
+      row-gap: 1rem;
+    }
+
+    .button-group a {
+      width: 65vw;
+      height: 2.8rem;
+      margin-bottom: 5px;
+  }
+
+  .links{
+    margin-top: .5rem;
+  }
+
+  .footer img {
+    width: 2rem;
+  }
 }
