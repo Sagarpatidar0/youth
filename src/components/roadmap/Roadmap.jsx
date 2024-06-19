@@ -5,7 +5,7 @@ function Roadmap() {
     <div id="journey">
       <div className="Roadmap">
         <div className="top-heading">
-          <img src="images/icon.png" height="80px" width="80px" />
+          <img src="images/icon.png" height="80px"  />
           <h1>Roadmap</h1>
         </div>
         <p id="roadmap-subhead">
