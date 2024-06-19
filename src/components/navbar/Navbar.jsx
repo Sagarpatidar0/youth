@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { useEffect, useState } from "react";
 
+
 export default function Navbar() {
   const [menuClass, setMenuClass] = useState("navbar-menu");
   const [navbarClass, setNavbarClass] = useState("ph-navbar");
+  const [bargerClass, setBargerClass] = useState("fa-solid fa-burger fa-beat-fade");
 
   const openMenu = () => {
     setMenuClass("navbar-menu menu-active");
@@ -15,6 +17,10 @@ export default function Navbar() {
     setMenuClass("navbar-menu");
     setNavbarClass("ph-navbar");
   };
+
+  setTimeout(() => {
+    setBargerClass("fa-solid fa-burger");
+  }, 5000);
 
   useEffect(() => {}, [menuClass]);
 
@@ -68,9 +74,7 @@ export default function Navbar() {
             <img src="./images/icon.png" alt="Logo" />
           </div>
           <div className="navbar-burger" id="burger" onClick={openMenu}>
-            <span></span>
-            <span></span>
-            <span></span>
+          <i className={bargerClass}></i>
           </div>
         </nav>
         <div className={menuClass} id="menu">

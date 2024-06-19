@@ -35,3 +35,11 @@ body{
   font-family: blanka;
   src: url(./font/Blanka-Regular\ 400.otf);
 }
+@font-face {
+  font-family: mokoto;
+  src: url(./font/mokoto-mokoto-regular-400.otf);
+}
+@font-face {
+  font-family: mokoto-2;
+  src: url(./font/mokoto-mokoto-regular-glitch-mark-2-400.otf);
+}
