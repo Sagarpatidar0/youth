@@ -79,7 +79,7 @@
 }
 
 .login-btn {
-  margin-top: -20px;
+  margin-top: -15px;
 }
 
 .login-btn a {
@@ -126,7 +126,7 @@
   }
 
   .login-btn {
-    margin-top: -10px;
+    margin-top: -5px;
   }
 
   .login-btn a {
@@ -136,6 +136,9 @@
 }
 
 @media screen and (max-width: 1330px) {
+  .navbar{
+    height: 100px;
+  }
   .nav-links {
     width: 60%;
   }
@@ -160,7 +163,11 @@
 @media screen and (max-width: 1200px) {
 
   .navbar{
-    height: 120px;
+    height: 100px;
+  }
+
+  .nav-links {
+    width: 55%;
   }
 
   .login-btn a{
@@ -189,7 +196,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #00000051;
+    background-color: #00000000;
     padding: 10px;
     position: fixed;
     width: 100%;
@@ -209,6 +216,10 @@
 
   .navbar-logo img {
     height: 40px;
+  }
+
+  #burger i{
+    font-size: 2rem;
   }
 
   .navbar-burger,
