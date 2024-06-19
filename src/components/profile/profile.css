@@ -6,7 +6,6 @@
 }
 
 .nav-item {
-  /* width: 33%; */
   display: flex;
   justify-content: center;
 }
@@ -34,7 +33,7 @@
 
 .profile-menu {
   position: absolute;
-  height: 100vh;
+  height: 91.7vh;
   background: RGB(191, 191, 191);
   width: 380px;
   right: 0%;
@@ -188,7 +187,7 @@ input[type="number"] {
 }
 
 .menu-close img {
-  scale: 3;
+  scale: .5;
   cursor: pointer;
 }
 
@@ -208,7 +207,7 @@ a.active{
 
 @media screen and (max-width: 768px) {
   .profile-menu {
-    height: 94vh;
+    height: 98vh;
     overflow: hidden;
   }
   .profile-nav {
@@ -227,7 +226,7 @@ a.active{
   }
 
   .menu-close img {
-    scale: 7;
+    scale: .5;
     margin-right: 15px;
     margin-bottom: 10px;
   }
@@ -236,4 +235,13 @@ a.active{
     padding: 2rem 0 0 1rem;
     font-size: 20px;
   }
+}
+
+
+@media screen and (max-width: 485px) {
+  .profile-menu {
+    height: 98vh;
+    width: 300px;
+  }
+  
 }

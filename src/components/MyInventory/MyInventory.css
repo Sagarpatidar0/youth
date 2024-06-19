@@ -16,9 +16,13 @@
 
 .inv-logo{
     display: flex;
-    width: 150px;
+    width: 60px;
     align-items: center;
     justify-content: center;
+}
+
+.inv-logo img{
+    width: 100%;
 }
 
 #inv-login-btn{
@@ -98,4 +102,20 @@
     height: 30px;
     width: 30px;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .inv-logo{
+        width: 30px;
+    }
+    .inv-logo img{
+        width: 100%;
+    }
+
+    .wallet-popup{
+        left: 3%;
+        width: 80%;
+    }
 }

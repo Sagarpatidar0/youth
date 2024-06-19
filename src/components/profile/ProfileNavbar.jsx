@@ -18,7 +18,7 @@ function ProfileNavbar() {
     </div>
     {menu ? (
       <div className="menu-close" onClick={() => setMenu(false)}>
-        <img src="images/close-icon.png" alt="" />
+        <img src="images/close-icon.png" alt="close" />
       </div>
     ) : null}
   </div>
