@@ -1,4 +1,4 @@
-#table-wrapper {
+/* #table-wrapper {
   max-height: 450px;
   margin: auto;
   margin-top: 200px;
@@ -80,3 +80,113 @@ thead > tr th {
     width: 120vw;
   }
 }
+
+ */
+
+#rank_contener{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ #rank{
+  height: 70vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  background: #0000007d;
+ }
+
+ #rank_hd{
+  background: rgb(255, 102, 0);
+  padding: 7px 10px;
+  font-weight: 700;
+ }
+
+
+ .tabs {
+  display: flex;
+  width: 45%;
+  padding: 10px 20px;
+  background: #000000cf;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.tab {
+  position: relative;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.active_tab{
+  color: orangered;
+  border-bottom: 2px solid orangered;
+}
+
+
+/* ------------- Rank Section ----------------- */
+
+#rank_table{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 5px;
+  margin-top: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+#rank_table::-webkit-scrollbar {
+  width: 7px;
+}
+
+#rank_table::-webkit-scrollbar-track {
+  background: rgb(57, 57, 57);
+}
+
+#rank_table::-webkit-scrollbar-thumb {
+  background-color: rgb(83, 83, 83);
+}
+
+#table_hd , #table_body{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+#table_hd{
+  padding: 0 30px 10px;
+}
+
+#table_body{
+  flex-direction: column;
+  gap: 10px;
+}
+
+#single-rank{
+  display: flex;
+  background: #00000075;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid gray;
+}
+
+#rank-user-profile{
+  display: flex;
+  align-items: center;
+}
+
+#rank-user-profile img{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+
