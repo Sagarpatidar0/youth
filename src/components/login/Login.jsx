@@ -68,7 +68,7 @@ function Login() {
             <Link to="/signup">Don&apos;t have an account? Sign up</Link>
           </div>
         </div>
-        <div className="footer">
+        <div className="footer" id="youthlogo-footer-login">
           <img src="./images/title/6-removebg-preview (1).png" alt="Logo 1" />
           <img src="./images/title/7-removebg-preview (1).png" alt="Logo 2" />
           <img src="./images/title/8-removebg-preview (1).png" alt="Logo 3" />

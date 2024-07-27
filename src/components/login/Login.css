@@ -130,6 +130,10 @@ footer {
   justify-self: space-evenly;
 }
 
+#youthlogo-footer-login{
+display: flex;
+}
+
 .footer img {
   margin-top: 2rem;
   width: 2.5rem;

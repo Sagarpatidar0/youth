@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+
+#youthlogo-footer-login{
+  display: flex;
+}
+
 .lo-container {
   display: flex;
   flex-direction: column;

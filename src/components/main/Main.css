@@ -82,13 +82,27 @@
 }
 
 #phone-bg-container{
-  background:url("./images/allbg.png"),  url("./images/bgimg.webp"), rgba(0, 0, 0, 0.226);
-  background-position: center, center top;
-  background-repeat: no-repeat, no-repeat; 
+  background:  url("./images/bgimg.webp"), #0c0f19;
+  background-position:  center top;
+  background-repeat:  no-repeat; 
+  background-size: auto;
   position: fixed;
   height: 100vh;
   width: 100vw;
   z-index: -10;
+}
+
+#phone-bg-container::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -11;
+  background: url("./images/noise.gif");
+  opacity: 0.3;
+  mix-blend-mode: luminosity;
 }
 
 .phone-bg-container-none{

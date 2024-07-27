@@ -6,6 +6,10 @@
   gap: 20px;
 }
 
+#footer-socialicon{
+  display: flex;
+}
+
 .frow-one h1 {
   font-family: blanka;
   font-size: 37.5px;

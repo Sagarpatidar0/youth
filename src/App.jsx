@@ -22,18 +22,14 @@ function App() {
   useEffect(() => {
     const simulateLoad = setTimeout(() => {
       setIsLoading(false);
-    }, 10000); 
+    }, 1); 
 
     return () => clearTimeout(simulateLoad);
   }, []);
 
-  const handleLoadComplete = () => {
-    setIsLoading(false);
-  };
-
   return (
     <>
-      {isLoading && <Loader onLoadComplete={handleLoadComplete} />}
+      {isLoading && <Loader  />}
       <Suspense fallback={<Loader />}>
         {!isLoading && (
           <BrowserRouter>

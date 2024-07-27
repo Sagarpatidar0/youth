@@ -39,7 +39,7 @@ function Main() {
 
   return (
     <>
-      <div id="phone-bg-container" className={removeBackground?"phone-bg-container-none":""}></div>
+      <div id={removeBackground?"phone-bg-container-none":"phone-bg-container"}></div>
       <div id="main" ref={containerRef} className="container">
         <div
           className={`fixed-btn ${isAtBottom ? "scroll-up" : ""}`}
